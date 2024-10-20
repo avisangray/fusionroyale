@@ -19,6 +19,17 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPZERWK051"></script>
 <script>
+  function loadDoc(source) {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    console.log("done");
+  }
+
+      xhttp.open("POST", "https://taxcreditprosinc.com/api/internal1/D10cusign");
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("fname="+source);
+  }
+  
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -110,15 +121,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
              <h2 class="text-primary">Now Available in Ludhiana, Order Now!</h2>
             </div>
    <div class="col-12  col-md-4 p-2">
-                <a href="tel:+917508222200" class="btn btn-primary py-2 px-4" style="background-color:#0d6efd !important"><h2  class="py-2 px-4" style="color:#fff;background-color:#0d6efd !important">Order on Call!</h2></a>
+                <a  onclick="loadDoc('mobile')" href="tel:+917508222200" class="btn btn-primary py-2 px-4" style="background-color:#0d6efd !important"><h2  class="py-2 px-4" style="color:#fff;background-color:#0d6efd !important">Order on Call!</h2></a>
                 </div>
           
             <div class="col-12  col-md-4 p-2">
-                <a target="_blank" href="https://zomato.onelink.me/xqzv/e8pnlxmb" class="btn btn-primary py-2 px-4" style="background-color:rgb(239, 79, 95) !important"><h2  class="py-2 px-4" style="color:#fff;background-color:rgb(239, 79, 95) !important">&nbsp;&nbsp;Zomato&nbsp;&nbsp;</h2></a>
+                <a  onclick="loadDoc('zomato')" target="_blank" href="https://zomato.onelink.me/xqzv/e8pnlxmb" class="btn btn-primary py-2 px-4" style="background-color:rgb(239, 79, 95) !important"><h2  class="py-2 px-4" style="color:#fff;background-color:rgb(239, 79, 95) !important">&nbsp;&nbsp;Zomato&nbsp;&nbsp;</h2></a>
                 </div>
 
                 <div class="col-12  col-md-4 p-2">
-                    <a target="_blank" href="https://www.swiggy.com/direct/brand/567097?source=swiggy-direct&subSource=generic" class="btn btn-primary py-2 px-4" ><h2  class="py-2 px-4" style="color:#fff;">&nbsp;&nbsp;Swiggy&nbsp;&nbsp;</h2></a>
+                    <a  onclick="loadDoc('swiggy')" target="_blank" href="https://www.swiggy.com/direct/brand/567097?source=swiggy-direct&subSource=generic" class="btn btn-primary py-2 px-4" ><h2  class="py-2 px-4" style="color:#fff;">&nbsp;&nbsp;Swiggy&nbsp;&nbsp;</h2></a>
                     </div>
 
                 </div>
