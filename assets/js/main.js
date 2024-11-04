@@ -100,13 +100,16 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
+  let backtotop = select('.back-to-top',true);
+  console.log("backtotop",backtotop)
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
-        backtotop.classList.add('active')
+        backtotop[0].classList.add('active');
+        backtotop[1].classList.add('active');
       } else {
-        backtotop.classList.remove('active')
+        backtotop[0].classList.remove('active');
+        backtotop[1].classList.remove('active');
       }
     }
     window.addEventListener('load', toggleBacktotop)
