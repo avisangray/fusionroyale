@@ -105,11 +105,11 @@
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
-        backtotop[0].classList.add('active');
-        backtotop[1].classList.add('active');
+        //backtotop[0].classList.add('active');
+        //backtotop[1].classList.add('active');
       } else {
-        backtotop[0].classList.remove('active');
-        backtotop[1].classList.remove('active');
+        //backtotop[0].classList.remove('active');
+        //backtotop[1].classList.remove('active');
       }
     }
     window.addEventListener('load', toggleBacktotop)
